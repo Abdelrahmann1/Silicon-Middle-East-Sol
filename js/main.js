@@ -27,19 +27,79 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: true,
-        smartSpeed: 1000,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
+    // $(".header-carousel").owlCarousel({
+    //     animateOut: 'slideOutDown',
+    //     items: 1,
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     dots: false,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="bi bi-arrow-left"></i>',
+    //         '<i class="bi bi-arrow-right"></i>'
+    //     ],
+    // });
+    $(document).ready(function(){
+        // Initialize Owl Carousel
+        $(".header-carousel").owlCarousel({
+            items: 1,
+            autoplay: true,
+            smartSpeed: 500,
+            dots: false,
+            loop: true,
+            nav: true,
+            navText: [
+                '<i class="bi bi-arrow-left"></i>',
+                '<i class="bi bi-arrow-right"></i>'
+            ]
+        });
+
+       // Set up interval to toggle sliders
+        // var currentIndex = 0;
+        // var sliderCount = $(".slider-container").length;
+
+        // setInterval(function() {
+        //     currentIndex = (currentIndex + 1) % sliderCount;
+        //     toggleSliders(currentIndex);
+        // }, 2000);
     });
+
+    // Function to toggle sliders
+    // function toggleSliders(currentIndex) {
+    //     $(".slider-container").each(function(index) {
+    //         if (index === currentIndex) {
+    //             $(this).show();
+    //         } else {
+    //             $(this).hide();
+    //         }
+    //     });
+    // }
+    
+ 
+    document.addEventListener("DOMContentLoaded", function() {
+        var currentIndex = 0;
+        var sliderCount = $(".slider-container").length;
+    
+        setInterval(function() {
+            currentIndex = (currentIndex + 1) % sliderCount;
+            toggleSliders(currentIndex);
+        }, 2000);
+    });
+    
+    function toggleSliders(currentIndex) {
+        $(".slider-container").each(function(index) {
+            if (index === currentIndex) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    }
+    
+ 
+    
+    
 
 
     // International carousel
