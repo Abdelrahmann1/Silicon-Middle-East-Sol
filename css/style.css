@@ -3,6 +3,11 @@
 .icon{
     width: 80px;
 }
+
+.icona{
+    width: 120px;
+    height: 80px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
