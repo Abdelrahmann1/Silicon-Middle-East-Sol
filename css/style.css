@@ -1,5 +1,8 @@
 
 /*** Spinner Start ***/
+.icon{
+    width: 80px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
