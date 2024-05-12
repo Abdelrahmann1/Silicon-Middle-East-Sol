@@ -3,7 +3,17 @@
 .icon{
     width: 80px;
 }
-
+.para{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to one line */
+    -webkit-box-orient: vertical;
+    cursor: pointer; /* Add cursor style to indicate it's clickable */
+}
+.expanded {
+    -webkit-line-clamp: initial; /* Show all lines when expanded */
+}
 .icona{
     width: 120px;
     height: 80px;

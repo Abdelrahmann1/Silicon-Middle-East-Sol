@@ -98,8 +98,7 @@
     }
     
  
-    
-    
+  
 
 
     // International carousel
