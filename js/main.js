@@ -84,7 +84,7 @@
         setInterval(function() {
             currentIndex = (currentIndex + 1) % sliderCount;
             toggleSliders(currentIndex);
-        }, 2000);
+        }, 5000);
     });
     
     function toggleSliders(currentIndex) {
@@ -98,7 +98,10 @@
     }
     
  
-  
+    function goToPage() {
+        
+        window.location.href = "startProject.html";
+    }
 
 
     // International carousel
