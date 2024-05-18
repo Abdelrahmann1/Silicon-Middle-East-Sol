@@ -18,6 +18,12 @@
     width: 120px;
     height: 80px;
 }
+.im{
+    width: 120px;
+}
+.imi{
+    width: 140px;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
