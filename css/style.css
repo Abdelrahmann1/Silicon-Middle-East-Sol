@@ -24,6 +24,9 @@
 .imi{
     width: 140px;
 }
+.hidden {
+    display: none;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;

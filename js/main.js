@@ -11,7 +11,14 @@
     };
     spinner(0);
     
-    
+    document.getElementById('website-development').addEventListener('click', function() {
+        var webDesignService = document.getElementById('web-design-service');
+        if (webDesignService.classList.contains('hidden')) {
+            webDesignService.classList.remove('hidden');
+        } else {
+            webDesignService.classList.add('hidden');
+        }
+    });
     // Initiate the wowjs
     new WOW().init();
 
