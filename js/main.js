@@ -19,6 +19,15 @@
             webDesignService.classList.add('hidden');
         }
     });
+        
+    document.getElementById('app-development').addEventListener('click', function() {
+        var webDesignService = document.getElementById('app-design-service');
+        if (webDesignService.classList.contains('hidden')) {
+            webDesignService.classList.remove('hidden');
+        } else {
+            webDesignService.classList.add('hidden');
+        }
+    });
     // Initiate the wowjs
     new WOW().init();
 
