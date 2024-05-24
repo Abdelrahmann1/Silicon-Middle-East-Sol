@@ -28,6 +28,14 @@
             webDesignService.classList.add('hidden');
         }
     });
+    document.getElementById('branding').addEventListener('click', function() {
+        var webDesignService = document.getElementById('branding-design-service');
+        if (webDesignService.classList.contains('hidden')) {
+            webDesignService.classList.remove('hidden');
+        } else {
+            webDesignService.classList.add('hidden');
+        }
+    });
     // Initiate the wowjs
     new WOW().init();
 

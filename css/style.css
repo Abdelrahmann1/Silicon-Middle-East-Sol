@@ -14,6 +14,12 @@
 .expanded {
     -webkit-line-clamp: initial; /* Show all lines when expanded */
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2fb8b8; /* Change this to your desired color */
+    background-size: 100%, 100%;
+    border-radius: 25px;
+}
 .icona{
     width: 120px;
     height: 80px;
