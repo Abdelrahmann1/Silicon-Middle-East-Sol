@@ -10,6 +10,64 @@
         }, 1);
     };
     spinner(0);
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     function showParagraph(paragraphNumber) {
+    //         // Hide all paragraphs
+    //         document.getElementById('paragraph1').style.display = 'none';
+    //         document.getElementById('paragraph2').style.display = 'none';
+    //         document.getElementById('paragraph3').style.display = 'none';
+
+    //         // Show the selected paragraph
+    //         document.getElementById('paragraph' + paragraphNumber).style.display = 'flex';
+    //     }
+
+    //     // Add event listeners to buttons
+    //     document.getElementById('button1').addEventListener('click', function() {
+    //         showParagraph(1);
+    //     });
+    //     document.getElementById('button2').addEventListener('click', function() {
+    //         showParagraph(2);
+    //     });
+    //     document.getElementById('button3').addEventListener('click', function() {
+    //         showParagraph(3);
+    //     });
+
+    //     // Initially display the first paragraph
+    //     showParagraph(1);
+    // });
+    document.addEventListener('DOMContentLoaded', function() {
+        function showParagraph(paragraphNumber) {
+            // Hide all paragraphs
+            document.getElementById('paragraph1').style.display = 'none';
+            document.getElementById('paragraph2').style.display = 'none';
+            document.getElementById('paragraph3').style.display = 'none';
+
+            // Show the selected paragraph
+            document.getElementById('paragraph' + paragraphNumber).style.display = 'flex';
+
+            // Remove active class from all buttons
+            document.getElementById('button1').classList.remove('active-button');
+            document.getElementById('button2').classList.remove('active-button');
+            document.getElementById('button3').classList.remove('active-button');
+
+            // Add active class to the clicked button
+            document.getElementById('button' + paragraphNumber).classList.add('active-button');
+        }
+
+        // Add event listeners to buttons
+        document.getElementById('button1').addEventListener('click', function() {
+            showParagraph(1);
+        });
+        document.getElementById('button2').addEventListener('click', function() {
+            showParagraph(2);
+        });
+        document.getElementById('button3').addEventListener('click', function() {
+            showParagraph(3);
+        });
+
+        // Initially display the first paragraph and set the first button as active
+        showParagraph(1);
+    });
     
     document.getElementById('website-development').addEventListener('click', function() {
         var webDesignService = document.getElementById('web-design-service');
