@@ -60,6 +60,56 @@
     
 
 }
+
+.head {
+    text-align: center;
+    padding: 50px 20px;
+}
+.head h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.head h3 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.contt h3 {
+    font-size: 1.75em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+.contt p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+   
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.benefit {
+    flex: 1 1 30%;
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.benefit h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.get-started {
+    text-align: center;
+    margin: 50px 20px;
+}
+.get-started p {
+    font-size: 1.2em;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
