@@ -39,7 +39,12 @@ window.addEventListener("load", function () {
             .then((userCredential) => {
                 // Signed up 
                 const user = userCredential.user;
-                console.log("tmam            ",user);
+                console.log(user);
+                document.cookie = "email=" +user.email;
+                document.cookie = "accessToken="+user.accessToken ;
+                window.location.href = "index.html";
+
+
             })
             .catch((error) => {
                 const errorCode = error.code;

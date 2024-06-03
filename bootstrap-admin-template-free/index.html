@@ -29,6 +29,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- check if user singed in  -->
+    <script src="js/check.js"></script>
 </head>
 
 <body>
@@ -250,11 +253,22 @@
             <!-- Sales Chart End -->
 
 
+
+
+
+
+
+
+
+
+
+
+
             <!-- Recent Sales Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
+                        <h6 class="mb-0">Web Development</h6>
                         <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
@@ -262,66 +276,186 @@
                             <thead>
                                 <tr class="text-dark">
                                     <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col">Date and Time</th>
+                                    <th scope="col">full name</th>
+                                    <th scope="col">email</th>
+                                    <th scope="col">phone number</th>
+                                    <th scope="col">country</th>
+                                    <th scope="col">description</th>
+                                    <th scope="col">url link</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
+                            <tbody id="web-development">
+                           
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <!-- Recent Sales End -->
+
+         <!-- Recent Sales Start -->
+         <div class="container-fluid pt-4 px-4">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Web Design</h6>
+                    <a href="">Show All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table text-start align-middle table-bordered table-hover mb-0">
+                        <thead>
+                            <tr class="text-dark">
+                                <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                <th scope="col">Date and Time</th>
+                                <th scope="col">full name</th>
+                                <th scope="col">email</th>
+                                <th scope="col">phone number</th>
+                                <th scope="col">country</th>
+                                <th scope="col">description</th>
+                                <th scope="col">url link</th>
+                            </tr>
+                        </thead>
+                        <tbody id="web-design">
+                       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Sales End -->
+             <!-- Recent Sales Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="bg-light text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h6 class="mb-0">app UI/UX</h6>
+                <a href="">Show All</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="col">Date and Time</th>
+                            <th scope="col">full name</th>
+                            <th scope="col">email</th>
+                            <th scope="col">phone number</th>
+                            <th scope="col">country</th>
+                            <th scope="col">description</th>
+                            <th scope="col">url link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="app-uiux">
+                   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Sales End -->
+         <!-- Recent Sales Start -->
+         <div class="container-fluid pt-4 px-4">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">app Cross</h6>
+                    <a href="">Show All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table text-start align-middle table-bordered table-hover mb-0">
+                        <thead>
+                            <tr class="text-dark">
+                                <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                <th scope="col">Date and Time</th>
+                                <th scope="col">full name</th>
+                                <th scope="col">email</th>
+                                <th scope="col">phone number</th>
+                                <th scope="col">country</th>
+                                <th scope="col">description</th>
+                                <th scope="col">url link</th>
+                            </tr>
+                        </thead>
+                        <tbody id="app-cross">
+                       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Sales End -->
+             <!-- Recent Sales Start -->
+      <div class="container-fluid pt-4 px-4">
+        <div class="bg-light text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h6 class="mb-0">brand identity</h6>
+                <a href="">Show All</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="col">Date and Time</th>
+                            <th scope="col">full name</th>
+                            <th scope="col">email</th>
+                            <th scope="col">phone number</th>
+                            <th scope="col">country</th>
+                            <th scope="col">description</th>
+                            <th scope="col">url link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="brand-identity">
+                   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Sales End -->
+    <div class="container-fluid pt-4 px-4">
+        <div class="bg-light text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h6 class="mb-0">graphic design</h6>
+                <a href="">Show All</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="col">Date and Time</th>
+                            <th scope="col">full name</th>
+                            <th scope="col">email</th>
+                            <th scope="col">phone number</th>
+                            <th scope="col">country</th>
+                            <th scope="col">description</th>
+                            <th scope="col">url link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="graphic-design">
+                   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Sales End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             <!-- Widgets Start -->
@@ -482,6 +616,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="module" src="js/getdata.js"></script>
 </body>
 
 </html>
