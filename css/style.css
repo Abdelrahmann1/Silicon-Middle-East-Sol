@@ -60,7 +60,10 @@
     
 
 }
-
+.logo{
+    width:170px;
+    /* height:80px; */
+ }
 .head {
     text-align: center;
     padding: 50px 20px;
@@ -246,12 +249,12 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 50px;
+    /* max-height: 50px; */
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    /* max-height: 45px; */
 }
 
 .navbar .dropdown-toggle::after {
