@@ -69,7 +69,7 @@
         showParagraph(1);
     });
     
-    document.getElementById('website-development').addEventListener('click', function() {
+    document.getElementById('website-development').addEventListener('mouseover', function() {
         var webDesignService = document.getElementById('web-design-service');
         if (webDesignService.classList.contains('hidden')) {
             webDesignService.classList.remove('hidden');
@@ -77,6 +77,7 @@
             webDesignService.classList.add('hidden');
         }
     });
+
         
     document.getElementById('app-development').addEventListener('click', function() {
         var webDesignService = document.getElementById('app-design-service');
