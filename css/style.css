@@ -228,6 +228,8 @@
 .RotateMoveLeft {
   position: relative;
   animation: RotateMoveLeft 10s linear infinite;
+  display: flex;
+  justify-content: center;
 }
 
 .RotateMoveRight {
@@ -954,7 +956,9 @@
   transform: scale(1.3);
 }
 /*** Blog End ***/
-
+.w-27rem{
+  width: 27rem !important;
+}
 /*** Testimonial Start ***/
 .testimonial {
   position: relative;
