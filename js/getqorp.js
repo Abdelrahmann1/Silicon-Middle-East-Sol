@@ -60,9 +60,9 @@ function dateToString(date) {
   return dateOfString;
 }
 var currentdate = new Date();
-var datetime = "";
-datetime += dateToString(currentdate);
-datetime +=
+var timenow = "";
+timenow += dateToString(currentdate);
+timenow +=
   " " +
   currentdate.getHours() +
   ":" +
@@ -73,53 +73,18 @@ datetime +=
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    alert(document.getElementById("competitor1").value);
+  const getform = document.getElementById("getform");
 
-    // Get form values
-    var presentationURL = "";
-    var fileURL = "";
-    var name = document.getElementById("name").value;
+  getform.addEventListener("submit", async (e) => {
+    alert('fg');
+    e.preventDefault();
+    var type = document.getElementById("type").value;
+    var url = document.getElementById("url").value;
+    var full_name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var project = document.getElementById("project").value;
-    var brandName = document.getElementById("brandName").value;
-    var businessWebsite = document.getElementById("businessWebsite").value;
-    var launchingDate = document.getElementById("launchingDate").value;
-    var industry = document.getElementById("industry").value;
-    var socialMediaPresence = document.getElementById(
-      "socialMediaPresence"
-    ).value;
-    var additionalInfo1 = document.getElementById("additionalInfo1").value;
-    var additionalInfo2 = document.getElementById("additionalInfo2").value;
-    var additionalInfo3 = document.getElementById("additionalInfo3").value;
-    var ageFrom = document.getElementById("ageFrom").value;
-    var ageTo = document.getElementById("ageTo").value;
-    var classification = document.getElementById("classification").value;
-    var gender = document.getElementById("gender").value;
-    var businessCategory = document.getElementById("businessCategory").value;
+    var phone_number = document.getElementById("number").value;
     var country = document.getElementById("country").value;
-    var businessType = document.getElementById("businessType").value;
-    var Competitor1 = document.getElementById("competitor1").value;
-    var Competitor2 = document.getElementById("competitor2").value;
-    var Competitor3 = document.getElementById("competitor3").value;
-    var goal1 = document.getElementById("Goal1").value;
-    var goal2 = document.getElementById("Goal2").value;
-    var goal3 = document.getElementById("Goal3").value;
-    var searchEngineOptimizationSEO =
-      document.getElementById("checkbox1").checked;
-    var mobileApplicationDevelopment =
-      document.getElementById("checkbox2").checked;
-    var softwareSystems = document.getElementById("checkbox3").checked;
-    var websiteAndSystemsDevelopment =
-      document.getElementById("checkbox4").checked;
-    var digitalMarketingServices = document.getElementById("checkbox5").checked;
-    var otherBrandingSolutions = document.getElementById("checkbox6").checked;
-    var other = document.getElementById("checkbox7").checked;
-    const presentationFile = document.getElementById("presentation").files[0];
-    const Filefile = document.getElementById("file").files[0];
+    var message = document.getElementById("message").value;
 
     try {
       // Reference for the data to be saved
@@ -128,63 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Data to save
       const userData = {
-        name,
-        email,
-        phone,
-        project,
-        brandName,
-        businessWebsite,
-        launchingDate,
-        industry,
-        socialMediaPresence,
-        additionalInfo1,
-        additionalInfo2,
-        additionalInfo3,
-        ageFrom,
-        ageTo,
-        classification,
-        gender,
-        businessCategory,
-        country,
-        businessType,
-        Competitor1,
-        Competitor2,
-        Competitor3,
-        goal1,
-        goal2,
-        goal3,
-        presentationURL,
-        fileURL,
-        searchEngineOptimizationSEO,
-        mobileApplicationDevelopment,
-        softwareSystems,
-        websiteAndSystemsDevelopment,
-        digitalMarketingServices,
-        otherBrandingSolutions,
-        other,
+        type,url,
+        email,full_name,
+        phone_number,
+        message,country,timenow
+
       };
 
-      if (presentationFile) {
-        const imageName = generateRandomName();
-        const presentationStorageRef = storageRef(
-          storage,
-          "presentations/" + imageName
-        );
-        const presentationSnapshot = await uploadBytes(
-          presentationStorageRef,
-          presentationFile
-        );
-        presentationURL = await getDownloadURL(presentationSnapshot.ref);
-        userData.presentationURL = presentationURL;
-      }
-      if (Filefile) {
-        const fileName = generateRandomName();
-        const fileStorageRef = storageRef(storage, "files/" + fileName);
-        const fileSnapshot = await uploadBytes(fileStorageRef, Filefile);
-        fileURL = await getDownloadURL(fileSnapshot.ref);
-        userData.fileURL = fileURL;
-      }
-      addDataToFirestore("startaproj", userData);
+
+      addDataToFirestore("getquoteorprice", userData);
 
       // alert('Form submitted successfully!');
     } catch (error) {
