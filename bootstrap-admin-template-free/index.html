@@ -447,7 +447,74 @@
 
 
 
-
+    <div class="container-fluid pt-4 px-4" >
+        <div class="bg-light rounded h-100 p-5">
+            <h6 class="mb-4">Template Form </h6>
+            <form id="templateform">
+                <div class="row mb-3">
+                    <label for="title" class="col-sm-2 col-form-label">title</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="desc" class="col-sm-2 col-form-label">description</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="desc">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="path" class="col-sm-2 col-form-label">path</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="path">
+                    </div>
+                </div>                
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">statues</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios"
+                                id="gridRadios1" value="live" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Live demo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios"
+                                id="gridRadios2" value="page">
+                            <label class="form-check-label" for="gridRadios2">
+                                another page
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">kind</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="kind"
+                                id="web" value="web" checked>
+                            <label class="form-check-label" for="web">
+                                web
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="kind"
+                                id="app" value="app">
+                            <label class="form-check-label" for="app">
+                                app
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class=" row mb-3">
+                    <label for="image" class="form-label">image</label>
+                    <input class="form-control form-control" id="image" type="file">
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
 
 
 
