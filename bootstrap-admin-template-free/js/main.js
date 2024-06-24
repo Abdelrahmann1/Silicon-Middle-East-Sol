@@ -1,3 +1,33 @@
+function extractNameFromEmail(email) {
+    const match = email.match(/^([^@]+)/);
+    if (match) {
+      const name = match[1];
+      return name.charAt(0).toUpperCase() + name.slice(1);
+    }
+    return null;
+  }
+
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+  }
+
+  // Automatically extract the name when the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    const email = getCookie('email');
+    if (email) {
+      const name = extractNameFromEmail(email);
+      document.getElementById('namechange').textContent =  name;
+    } else {
+      document.getElementById('namechange').textContent = "Email cookie not found";
+    }
+  });
+
+
+
+
 (function ($) {
     "use strict";
 

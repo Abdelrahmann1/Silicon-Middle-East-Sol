@@ -62,15 +62,8 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
-                        </div>
-                    </div>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Requsts</a>
+                    <a href="template_form.html" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Template Form</a>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
                     <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
@@ -120,12 +113,24 @@
                                 </div>
                             </a>
                             <hr class="dropdown-divider">
+                            
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="fw-normal mb-0">Jhon send asdyou a message</h6>
+                                        <small>15 minusadsates ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon seasdnd you a message</h6>
+                                        <small>15 minutessadasd ago</small>
                                     </div>
                                 </div>
                             </a>
@@ -170,7 +175,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                            <span class="d-none d-lg-inline-flex " id ="namechange">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
@@ -228,7 +233,7 @@
 
 
             <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
+            <!-- <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light text-center rounded p-4">
@@ -249,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Sales Chart End -->
 
 
@@ -446,75 +451,6 @@
 
 
 
-
-    <div class="container-fluid pt-4 px-4" >
-        <div class="bg-light rounded h-100 p-5">
-            <h6 class="mb-4">Template Form </h6>
-            <form id="templateform">
-                <div class="row mb-3">
-                    <label for="title" class="col-sm-2 col-form-label">title</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="title">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label for="desc" class="col-sm-2 col-form-label">description</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="desc">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <label for="path" class="col-sm-2 col-form-label">path</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="path">
-                    </div>
-                </div>                
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">statues</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios"
-                                id="gridRadios1" value="live" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                Live demo
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios"
-                                id="gridRadios2" value="page">
-                            <label class="form-check-label" for="gridRadios2">
-                                another page
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">kind</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="kind"
-                                id="web" value="web" checked>
-                            <label class="form-check-label" for="web">
-                                web
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="kind"
-                                id="app" value="app">
-                            <label class="form-check-label" for="app">
-                                app
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class=" row mb-3">
-                    <label for="image" class="form-label">image</label>
-                    <input class="form-control form-control" id="image" type="file">
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-    </div>
 
 
 

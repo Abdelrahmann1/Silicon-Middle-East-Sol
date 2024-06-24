@@ -1,3 +1,6 @@
+
+
+
 (function ($) {
     "use strict";
 
@@ -79,7 +82,7 @@
     });
 
         
-    document.getElementById('app-development').addEventListener('click', function() {
+    document.getElementById('app-development').addEventListener('mouseover', function() {
         var webDesignService = document.getElementById('app-design-service');
         if (webDesignService.classList.contains('hidden')) {
             webDesignService.classList.remove('hidden');
@@ -87,7 +90,7 @@
             webDesignService.classList.add('hidden');
         }
     });
-    document.getElementById('branding').addEventListener('click', function() {
+    document.getElementById('branding').addEventListener('mouseover', function() {
         var webDesignService = document.getElementById('branding-design-service');
         if (webDesignService.classList.contains('hidden')) {
             webDesignService.classList.remove('hidden');
@@ -270,7 +273,7 @@
       }
 
 
-   
+
 
 })(jQuery);
 
